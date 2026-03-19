@@ -10,7 +10,7 @@ export const ClientLikeButton: FC<Props> = ({ initialLikes }) => {
     <div className="client-text">
       <p>This is rendered on the client</p>
       <button className="bordered" onClick={() => setLikes(likes => likes + 1)}>
-        Likes (passed from a Server Component): {likes}
+        Likes: {likes} (initial value passed from a Server Component)
       </button>
     </div>
   );
