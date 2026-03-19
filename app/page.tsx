@@ -9,6 +9,7 @@ const PAGES = [
   { href: '/server-navigation/one', label: 'Server Navigation (page One)' },
   { href: '/client-navigation/one', label: 'Client Navigation (page One)' },
   { href: '/hydration-error', label: 'Hydration Error' },
+  { href: '/solved-hydration-error', label: 'Solved hydration Error' },
 ];
 
 export default function Page() {
