@@ -12,7 +12,7 @@ export default async function Page() {
 
 const ServerLikes: FC = () => {
   return (
-    <div>
+    <div className="server-border">
       <h2 className="server-text">This text is rendered on the server</h2>
       {/* But the Like component is rendered on the client */}
       <ClientLikeButton initialLikes={1} />
