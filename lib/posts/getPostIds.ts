@@ -1,3 +1,5 @@
+'use server';
+
 import { Post } from '@/types/post';
 import { getPostIdsDB } from './db/getPostIdsDB';
 
