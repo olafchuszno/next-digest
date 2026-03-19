@@ -9,9 +9,9 @@ export default async function PostsPage() {
 
   return (
     <>
-      <h1>Posts list</h1>
+      <h1>Posts list rendered on the server</h1>
       <ul>
-        {postIds.map((postId) => (
+        {postIds.map(postId => (
           <PostLink postId={postId} key={postId} />
         ))}
       </ul>
