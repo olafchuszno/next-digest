@@ -1,5 +1,5 @@
 // app/post/page.tsx
-import { getPostIds } from '@/lib';
+import { getPostIds } from '@/lib/posts';
 import { PostLink } from './PostLink';
 
 export default async function PostsPage() {
@@ -9,8 +9,8 @@ export default async function PostsPage() {
 
   return (
     <>
-      <h1>Posts list rendered on the server</h1>
-      <ul>
+      <h1 className="mb-4 text-2xl">Posts list rendered on the server</h1>
+      <ul className="w-max">
         {postIds.map(postId => (
           <PostLink postId={postId} key={postId} />
         ))}

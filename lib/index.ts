@@ -1,2 +1,1 @@
-export * from './getPostById'
-export * from './getPostIds'
+export * from './wait';

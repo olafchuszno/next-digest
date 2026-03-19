@@ -1,14 +1,26 @@
-'use client';
+import Link from 'next/link';
 
-/**
- * This example will show Hydration errors.
- * In dev: Recoverable Error
+const PAGES = [
+  { href: '/client-component', label: 'Client Component' },
+  { href: '/server-component', label: 'Server Component' },
+  { href: '/post', label: 'Posts' },
+  { href: '/server-navigation/one', label: 'Server Navigation (page One)' },
+  { href: '/client-navigation/one', label: 'Client Navigation (page One)' },
+  { href: '/hydration-error', label: 'Hydration Error' },
+];
 
+export default function Page() {
+  return (
+    <main>
+      <h1>Next.js Digest Pages</h1>
 
-Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
- * In prod (it will build - later in browser will error): f2f58a7e93290fbb.js:1 Uncaught Error: Minified React error #418; visit https://react.dev/errors/418?args[]=text&args[]= for the full message or use the non-minified dev environment for full errors and additional helpful warnings.
- */
-
-export default function Home() {
-  return <div>{new Date().getTime()}</div>;
+      <nav className="flex flex-col gap-2">
+        {PAGES.map(({ href, label }) => (
+          <Link key={href} href={href} className="bordered w-fit">
+            {label}
+          </Link>
+        ))}
+      </nav>
+    </main>
+  );
 }

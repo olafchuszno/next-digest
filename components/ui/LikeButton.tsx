@@ -1,18 +1,23 @@
 // components/ui/LikeButton.tsx
-'use client'
+'use client';
 
-import { FC, useEffect, useState } from 'react'
+import { Post } from '@/types/post';
+import { FC, useEffect, useState } from 'react';
 
 type Props = {
-  initialLikes?: number
-}
+  post: Post;
+};
 
-export const LikeButton: FC<Props> = ({ initialLikes }) => {
-  const [count, setCount] = useState(initialLikes ?? 0)
+export const LikeButton: FC<Props> = ({ post }) => {
+  const [count, setCount] = useState(post.likes ?? 0);
 
   useEffect(() => {
-    console.log('mounted in browser')
-  }, [])
+    console.log('mounted in browser');
+  }, []);
 
-  return <button onClick={() => setCount(count + 1)}>Likes: {count}</button>
-}
+  return (
+    <button className="bordered" onClick={() => setCount(count + 1)}>
+      Client Likes: {count}
+    </button>
+  );
+};
