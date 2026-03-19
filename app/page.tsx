@@ -4,6 +4,7 @@ const PAGES = [
   { href: '/client-component', label: 'Client Component' },
   { href: '/server-component', label: 'Server Component' },
   { href: '/client-in-server-component', label: 'Client component (inside of) Server Component' },
+  { href: '/server-in-client-component', label: 'Server component (inside of) Client Component' },
   { href: '/post', label: 'Posts' },
   { href: '/server-navigation/one', label: 'Server Navigation (page One)' },
   { href: '/client-navigation/one', label: 'Client Navigation (page One)' },
