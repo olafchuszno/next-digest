@@ -15,7 +15,7 @@ export default function Page() {
       <h1>Next.js Digest Pages</h1>
       <h2>(cacheComponents: false)</h2>
 
-      <nav className="flex flex-col gap-2">
+      <nav className="flex flex-col mt-4 gap-2">
         {PAGES.map(({ href, label }) => (
           <Link key={href} href={href} className="bordered w-fit">
             {label}
