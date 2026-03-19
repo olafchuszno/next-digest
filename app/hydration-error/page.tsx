@@ -10,5 +10,12 @@ Hydration failed because the server rendered text didn't match the client. As a 
  */
 
 export default function Page() {
-  return <div>{new Date().getTime()}</div>;
+  return (
+    <>
+      <h1>Random number in a client component: {new Date().getTime()}</h1>
+
+      <p>This causes a Hydration error...</p>
+      <p> Try refreshing the page if you don&apos;t see it yet!</p>
+    </>
+  );
 }
