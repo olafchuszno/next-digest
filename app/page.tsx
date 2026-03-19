@@ -8,6 +8,7 @@ const PAGES = [
   { href: '/post', label: 'Posts' },
   { href: '/server-navigation/one', label: 'Server Navigation (page One)' },
   { href: '/client-navigation/one', label: 'Client Navigation (page One)' },
+  { href: '/route-handlers', label: 'Route Handlers (GET/POST)' },
   { href: '/hydration-error', label: 'Hydration Error' },
   { href: '/solved-hydration-error', label: 'Solved hydration Error' },
 ];
