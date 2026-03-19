@@ -8,12 +8,13 @@ type Props = {
 
 export const ServerLikeButtonWithFormAction: FC<Props> = ({ post }) => {
   return (
-    <form action={updatePostLikesFormAction}>
+    <form
+      className="server-border server-text flex items-center"
+      action={updatePostLikesFormAction}
+    >
       <input type="hidden" name="id" value={post.id} />
       <input type="hidden" name="likes" value={(post.likes ?? 0) + 1} />
-      <button className="bordered" type="submit">
-        Server Likes: {post.likes ?? 0}
-      </button>
+      <button type="submit">Server Likes: {post.likes ?? 0}</button>
     </form>
   );
 };

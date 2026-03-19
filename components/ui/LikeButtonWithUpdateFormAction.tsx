@@ -20,7 +20,7 @@ export const LikeButtonWithUpdateFormAction: FC<Props> = ({ post }) => {
   };
 
   return (
-    <form action={action}>
+    <form className="client-border client-text flex items-center" action={action}>
       <input type="hidden" name="id" value={post.id} />
       <input type="hidden" name="likes" value={count + 1} />
       <SubmitButton count={count} />
@@ -31,7 +31,7 @@ export const LikeButtonWithUpdateFormAction: FC<Props> = ({ post }) => {
 const SubmitButton = ({ count }: { count: number }) => {
   const { pending } = useFormStatus();
   return (
-    <button className="bordered flex gap-1" type="submit" disabled={pending}>
+    <button className="items-center flex gap-1" type="submit" disabled={pending}>
       Client Likes (with update + form action): {pending ? <Spinner /> : count}
     </button>
   );

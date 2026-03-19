@@ -16,7 +16,7 @@ export const LikeButtonWithUpdate: FC<Props> = ({ post }) => {
 
   return (
     <button
-      className="bordered flex gap-1"
+      className="client-border client-text items-center flex gap-1"
       onClick={() => {
         startTransition(async () => {
           const result = await updatePostLikesAction({

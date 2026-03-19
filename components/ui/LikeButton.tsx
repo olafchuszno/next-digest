@@ -16,7 +16,7 @@ export const LikeButton: FC<Props> = ({ post }) => {
   }, []);
 
   return (
-    <button className="bordered" onClick={() => setCount(count + 1)}>
+    <button className="client-border client-text" onClick={() => setCount(count + 1)}>
       Client Likes: {count}
     </button>
   );

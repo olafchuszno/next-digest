@@ -8,13 +8,13 @@ export default async function PostsPage() {
   if (!postIds) return <div>Could not get posts!</div>;
 
   return (
-    <>
-      <h1 className="mb-4 text-2xl">Posts list rendered on the server</h1>
+    <main className="server-border">
+      <h1 className="server-text mb-4 text-2xl">Posts list rendered on the server</h1>
       <ul className="w-max">
         {postIds.map(postId => (
           <PostLink postId={postId} key={postId} />
         ))}
       </ul>
-    </>
+    </main>
   );
 }

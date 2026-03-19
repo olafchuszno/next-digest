@@ -15,7 +15,7 @@ export default async function PostPage({ params }: PageProps<'/post/[postId]'>) 
   if (!post) return notFound();
 
   return (
-    <>
+    <main className="server-border server-text">
       <h1>{post.title}</h1>
       {/* LikeButtons are client component */}
       <div className="flex gap-2">
@@ -25,6 +25,6 @@ export default async function PostPage({ params }: PageProps<'/post/[postId]'>) 
         <ServerLikeButtonWithFormAction post={post} />
         <ServerLikeButtonWithFormActionAndSpinner post={post} />
       </div>
-    </>
+    </main>
   );
 }
