@@ -13,6 +13,7 @@ export default function Page() {
   return (
     <main>
       <h1>Next.js Digest Pages</h1>
+      <h2>(cacheComponents: false)</h2>
 
       <nav className="flex flex-col gap-2">
         {PAGES.map(({ href, label }) => (
