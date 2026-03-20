@@ -1,15 +1,18 @@
 import { cookies, headers } from 'next/headers';
 
-// Forces dynamic rendering when not using any dynamic APIs
+// Forces dynamic rendering EVEN when not using any dynamic APIs
 export const dynamic = 'force-dynamic';
 
-// Also forces dynamic rendering
+// Almost everything in this page forces it to be Dynamically Rendered
 export default async function Page({ params, searchParams }: PageProps<'/dynamic-route/[postId]'>) {
+  // Forces dynamic rendering
   const { postId } = await params;
+  // Forces dynamic rendering
   const { page = '1', sort = 'date' } = await searchParams;
 
-  // Almost everything in this page forces it to be dynamically rendered
+  // Forces dynamic rendering
   const cookieStore = await cookies();
+  // Forces dynamic rendering
   const headerStore = await headers();
 
   const token = cookieStore.get('token')?.value;
@@ -18,6 +21,7 @@ export default async function Page({ params, searchParams }: PageProps<'/dynamic
   const res = await fetch(
     `https://jsonplaceholder.typicode.com/posts/${postId}?page=${page}&sort=${sort}`,
     {
+      // Forces dynamic rendering
       cache: 'no-store',
       headers: {
         Authorization: `Bearer ${token}`,
