@@ -1,11 +1,14 @@
 import { cookies, headers } from 'next/headers';
 
+// Forces dynamic rendering when not using any dynamic APIs
 export const dynamic = 'force-dynamic';
 
+// Also forces dynamic rendering
 export default async function Page({ params, searchParams }: PageProps<'/dynamic-route/[postId]'>) {
   const { postId } = await params;
   const { page = '1', sort = 'date' } = await searchParams;
 
+  // Almost everything in this page forces it to be dynamically rendered
   const cookieStore = await cookies();
   const headerStore = await headers();
 
