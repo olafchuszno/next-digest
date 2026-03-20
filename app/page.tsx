@@ -15,6 +15,9 @@ const PAGES = [
   { href: '/hydration-example', label: 'Hydration example (check response HTML)' },
   { href: '/hydration-error', label: 'Hydration Error' },
   { href: '/solved-hydration-error', label: 'Solved hydration Error' },
+  { href: '/loading-state', label: 'Loading State' },
+  { href: '/error-state', label: 'Error State' },
+  { href: '/not-found-state', label: 'Not Found State (404)' },
 ];
 
 export default function Page() {
