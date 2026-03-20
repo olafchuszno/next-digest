@@ -23,7 +23,7 @@ const PAGES = [
 export default function Page() {
   return (
     <main>
-      <h1>Next.js Digest</h1>
+      <h1>Welcome to 2026 Next.js Digest!</h1>
       <p>(cacheComponents: false)</p>
 
       <div className="my-12">
