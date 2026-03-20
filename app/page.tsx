@@ -8,6 +8,8 @@ const PAGES = [
   { href: '/post', label: 'Posts' },
   { href: '/server-navigation/one', label: 'Server Navigation (page One)' },
   { href: '/client-navigation/one', label: 'Client Navigation (page One)' },
+  { href: '/dynamic-route/1', label: 'Dynamic Route' },
+  { href: '/static-route', label: 'Static Route' },
   { href: '/route-handlers', label: 'Route Handlers (GET/POST)' },
   { href: '/server-function-in-client-component', label: 'Server function in a Client Component' },
   { href: '/hydration-example', label: 'Hydration example (check response HTML)' },
