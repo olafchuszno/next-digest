@@ -19,6 +19,7 @@ const PAGES = [
   { href: '/error-state', label: 'Error State' },
   { href: '/not-found-state/1', label: 'Not Found State (404)' },
   { href: '/static-params/1', label: 'Generate Static Params' },
+  { href: '/elastic-component', label: 'Elastic Component' },
 ];
 
 export default function Page() {
