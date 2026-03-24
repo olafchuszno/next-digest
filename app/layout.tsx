@@ -30,6 +30,9 @@ export default function RootLayout({
           <Link className="bordered" href={'/'}>
             {'<'} Home
           </Link>
+          <Link className="bordered" href={'https://next-digest-cache-components.vercel.app/'}>
+            Cache Components (true)
+          </Link>
         </header>
         {children}
       </body>
