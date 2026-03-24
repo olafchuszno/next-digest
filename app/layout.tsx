@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
-        <header className="mb-8">
+        <header className="mb-8 flex gap-2">
           <Link className="bordered" href={'/'}>
             {'<'} Home
           </Link>
