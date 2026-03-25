@@ -56,7 +56,7 @@ const GROUPS = [
           "Programmatic navigation with the useRouter hook: push, replace, back. Requires 'use client' since it accesses browser routing APIs.",
       },
       {
-        href: '/dynamic-route/1',
+        href: '/dynamic-route/1?page=2&sort=author',
         label: 'Dynamic Route',
         description:
           'Dynamic URL segments via [param] folder naming. The segment value is passed as a prop to the page and can drive server-side data fetching.',

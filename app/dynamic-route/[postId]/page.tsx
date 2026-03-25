@@ -32,5 +32,12 @@ export default async function Page({ params, searchParams }: PageProps<'/dynamic
 
   const post = await res.json();
 
-  return <div>{post.title}</div>;
+  return (
+    <ul>
+      <li>Title: {post.title}</li>
+      {page && <li>Page: {page}</li>}
+      {postId && <li>PostId: {postId}</li>}
+      {sort && <li>Sort: {sort}</li>}
+    </ul>
+  );
 }
