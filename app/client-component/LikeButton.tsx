@@ -10,7 +10,7 @@ export const LikeButton: FC = () => {
   }, []);
 
   return (
-    <button className="bordered" onClick={() => setLikes(likes + 1)}>
+    <button className="client-text client-border" onClick={() => setLikes(likes + 1)}>
       Likes: {likes}
     </button>
   );
