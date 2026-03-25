@@ -39,6 +39,31 @@ const GROUPS = [
     ],
   },
   {
+    title: 'Hydration',
+    description:
+      'What hydration is, what breaks it, and how to fix it. Essential for understanding why server-rendered HTML sometimes conflicts with what React renders on the client.',
+    pages: [
+      {
+        href: '/hydration-example',
+        label: 'Hydration Example',
+        description:
+          'How Next.js sends pre-rendered HTML from the server and attaches React event listeners on the client. View page source vs the live DOM.',
+      },
+      {
+        href: '/hydration-error',
+        label: 'Hydration Error',
+        description:
+          'A mismatch between server HTML and what React renders on the client. Common causes: Date.now(), Math.random(), or browser-only APIs during render.',
+      },
+      {
+        href: '/solved-hydration-error',
+        label: 'Solved Hydration Error',
+        description:
+          'Fix strategies: suppressHydrationWarning for minor mismatches; dynamic() with ssr:false to skip server rendering for truly client-only components.',
+      },
+    ],
+  },
+  {
     title: 'Routing',
     description:
       'How Next.js maps the file system to URLs. Covers static, dynamic, and pre-generated routes, plus client- vs server-side navigation between them.',
@@ -122,31 +147,6 @@ const GROUPS = [
         label: 'Not Found State (404)',
         description:
           'not-found.tsx: rendered when notFound() is called inside a route. Lets you customise the 404 experience per route segment.',
-      },
-    ],
-  },
-  {
-    title: 'Hydration',
-    description:
-      'What hydration is, what breaks it, and how to fix it. Essential for understanding why server-rendered HTML sometimes conflicts with what React renders on the client.',
-    pages: [
-      {
-        href: '/hydration-example',
-        label: 'Hydration Example',
-        description:
-          'How Next.js sends pre-rendered HTML from the server and attaches React event listeners on the client. View page source vs the live DOM.',
-      },
-      {
-        href: '/hydration-error',
-        label: 'Hydration Error',
-        description:
-          'A mismatch between server HTML and what React renders on the client. Common causes: Date.now(), Math.random(), or browser-only APIs during render.',
-      },
-      {
-        href: '/solved-hydration-error',
-        label: 'Solved Hydration Error',
-        description:
-          'Fix strategies: suppressHydrationWarning for minor mismatches; dynamic() with ssr:false to skip server rendering for truly client-only components.',
       },
     ],
   },
