@@ -4,9 +4,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <>
-      <input className="bordered mb-2" type="text" placeholder="type something..." /> SUB-LAYOUT
-      {children}
-    </>
+    <header className="bordered">
+      <input className="bordered mb-2" type="text" placeholder="type something..." /> (sub-layout -{' '}
+      <code>app/server-navigation/layout.tsx</code>){children}
+    </header>
   );
 }
