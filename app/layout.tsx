@@ -35,7 +35,7 @@ export default function RootLayout({
             className="bordered"
             href={'https://next-digest-cache-components.vercel.app/'}
           >
-            Cache Components (true)
+            Visit other demo (<code>cacheComponents: true</code>)
           </Link>
         </header>
         {children}
