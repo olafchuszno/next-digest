@@ -1,3 +1,12 @@
+## Next.js learning materials I prepared for React developers for a digest meeting in May 2026.
+
+- Feel free to clone this repo, use it locally and visit the Vercel hosted version to better understand different concepts presented in this project in a Productino environment.
+- To better understand these concepts I highly encourage you to modify the code locally, experiment and test your assumptions **and remember that the code behaves differently in Prod.**
+- To simulate the prod environment use `npm run build` and `npm run start`. The `start` command will use the build next assets and start a local production server that is highly similar to the Vercel-deployed version.
+- In case of any questions related this or any other digest in the future don't hesitate to reach out to me at chuszno.dev@gmail.com.
+
+## Auto-generated docs
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
